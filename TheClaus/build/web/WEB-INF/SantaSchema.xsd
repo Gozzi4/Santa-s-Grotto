@@ -1,0 +1,88 @@
+
+
+<xs:schema attributeFormDefault="unqualified" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+
+xmlns="http://www.w3schools.com"
+           elementFormDefault="qualified" 
+            >
+    <xs:element name="grotto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="xmas" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="name"/>
+                            <xs:element type="xs:string" name="overview"/>
+                            <xs:element name="statistics">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="population">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element type="xs:string" name="etc" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="era">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="dateFrom"/>
+                                        <xs:element type="xs:string" name="dateTo"/>
+                                        <xs:element name="events">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="event" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="name"/>
+                                                                <xs:element type="xs:string" name="image"/>
+                                                                <xs:element type="xs:short" name="date" minOccurs="0"/>
+                                                                <xs:element name="bio">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" name="Story"/>
+                                                                            <xs:element type="xs:string" name="etc" minOccurs="0"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="details">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="detail" maxOccurs="unbounded" minOccurs="0">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="type" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="event.xsl" type="text/xsl"?>
+<grotto
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="SantaSchema.xsd">
+    <xmas>
+        <name>Santa</name>
+        <overview>The Boss</overview>
+        <statistics>
+            <population type="approx"> Weight:200kg</population>
+			
+        </statistics>
+        <era type="modern">
+            <dateFrom> Working since:1900</dateFrom>
+            <dateTo>Present</dateTo>
+            <events>
+                <event id="1">
+                    <name> Santa's backround</name>
+                    <image>SantaC.png</image>
+                    <date>2012</date>
+					
+                    <bio>
+                        <Story>Santa’s Story
+                            Santa Claus is often described as a large man with a long white beard in scarlet robes lined with fur. 
+                            He typified the spirit of good cheer at Christmas, bringing peace, joy, good food and wine and revelry. 
+                            The Victorian revival of Christmas included Father Christmas as the emblem of 'good cheer'. 
+                            His physical appearance was variable, with one famous image being John Leech's illustration of the "Ghost of Christmas Present" in Charles Dickens's festive classic A Christmas Carol (1843), as a great genial man in a green coat lined with fur who takes Scrooge through the bustling streets of London on the current Christmas morning, sprinkling the essence of Christmas onto the happy populace
+                        </Story>
+						
+                        <etc/>
+                    </bio>
+                    <details>
+                        <detail id="1">Lives in LapLand</detail>
+                        <detail id="2">Delievers all over the world</detail>
+                    </details>
+                </event>
+                <event id="2">
+                    <name>His Reindeers</name>
+                    <image>reindeer1.png</image>
+					
+                   
+                    <bio>
+                        <Story>when, what to to my wondering eyes should appear,
+                            but a miniature sleigh, and eight tiny rein-deer,
+                            with a little old driver, so lively and quick,
+                            I knew in a moment it must be St. Nick.
+
+                            More rapid than eagles his coursers they came,
+                            And he whistled, and shouted, and call'd them by name:
+                            "Now, Dasher! Now, Dancer! Now, Prancer, and Vixen!
+                            "On, Comet! On, Cupid! On, Donder and Blitzen!
+
+                            "To the top of the porch! to the top of the wall!
+                            "Now dash away! dash away! dash away all!"
+                            As dry leaves that before the wild hurricane fly,
+                            When they meet with an obstacle, mount to the sky;
+                            So up to the house-top the coursers they flew,
+                        </Story>
+                        
+                        <etc/>
+                    </bio>
+                    <details>
+                        <detail id="1">The Reindeer's
+                            Rudolf
+                            Dasher 
+                            Dancer 
+                            Prancer 
+                            Vixen
+                            Comet 
+                            Cupid 
+                            Donner 
+                            Blitz-en
+                        </detail>
+                    </details>
+                </event>
+            </events>
+        </era>
+    </xmas>
+    <xmas>
+        <name>Rudolf</name>
+        <overview>BADDEST REINDDER OF THEM ALL</overview>
+        <statistics>
+            <population type="approx"></population>
+            
+            <etc/>
+        </statistics>
+        <era type="modern">
+            <dateFrom>Working since:1900</dateFrom>
+            <dateTo>Present</dateTo>
+            <events>
+                <event id="1">
+                    <name>The Main reindeer</name>
+                    <image>rudolph.png</image>
+                    <date>1906</date>
+                   
+                    <bio>
+                        <Story>Rudolf is a reindeer with a glowing red nose, popularly known as "Santa's 9th Reindeer." When depicted, he is the lead reindeer pulling Santa's sleigh on Christmas Eve.
+                              The luminosity of his nose is so great that it illuminates the team's path through inclement winter weather.
+                        </Story>
+                    </bio>
+                    <details>
+                        <detail id="1">Top reindeer, all round buzzer.</detail>
+                    </details>
+                </event>
+            </events>
+        </era>
+    </xmas>
+</grotto>

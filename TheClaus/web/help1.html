@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Write to Santa</title>
+        <link href="CascadeStyleSheet.css" rel="StyleSheet" type="text/css"/>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script src='snowfall.jquery.js'></script>
+<script type='text/javascript'>
+       $(document).ready(function() {
+    $('#button').click(function(e) {
+      e.preventDefault();
+      
+      document.getElementById("write").innerHTML=$('#fname').val()+"'s present is: "+$('\n#lname').val();
+      new Audio('santam').play()
+      var div=$("#write");  
+    div.animate({right:'50px'},"slow");
+    div.animate({fontSize:'2em'},"slow");
+      $("#write").fadeOut(4000);
+      $('#after').fadeIn(3000);
+    
+    });
+  });
+    </script>
+        <script type='text/javascript'>
+
+            $("#round").ready(function() {
+
+                $('#after').hide();
+                $(document).snowfall('clear');
+                $(document).snowfall({round: true, minSize: 5, maxSize: 8}); // add rounded
+            });
+        </script>
+        <script type="text/javascript" src="Ajax.js">
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+
+            var xmlhttp;
+
+            aaManageEvent(window, "load", function() {
+                for (var i = 0; i < document.forms[0].elements.length; i++) {
+                    aaManageEvent(document.forms[0].elements[i], "focus", showHelp);
+                }
+            });
+
+            function showHelp(evnt) {
+                evnt = (evnt) ? evnt : window.event;
+                if (!xmlhttp)
+                    xmlhttp = aaGetXmlHttpRequest();
+                if (!xmlhttp)
+                    return;
+                var objId = (evnt.currentTarget) ? evnt.currentTarget.id : evnt.srcElement.id;
+                var qry = "item=" + objId;
+                var url = 'help.jsp?' + qry;
+                xmlhttp.open('GET', url, true);
+                xmlhttp.onreadystatechange = printHelp;
+                xmlhttp.send(null);
+            }
+
+
+            function printHelp() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById('help').innerHTML = xmlhttp.responseText;
+                }
+            }
+
+
+            //]]>
+        </script>
+
+    </head>
+
+    <body>
+        <center>
+            <a href="HomeServlet">Home</a>
+
+            <a href="help1.html">Write to Santa</a>
+            <br></br>
+        <br></br>
+        <br></br>
+        </center>
+        
+            <form action="help1.html" method="post">
+                <center>
+                    <label for="fname" >Name:</label>
+                    <input id="fname" type="text" /><br />
+
+                    <label for="lastname">Present:</label>
+                    <input id="lname" type="text" /><br />
+
+                    <button id="button">Send</button>
+
+                    <div id="help">
+
+                    </div>
+                </center>
+            </form>
+
+        
+        <div id="write">
+            
+        
+            
+        </div>
+        <div id="after">
+        </div>
+
+        <div class="tree">
+        </div>
+        <div class="tree1">
+        </div>
+    </body>
+
+
+</html>

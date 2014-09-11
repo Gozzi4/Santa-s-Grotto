@@ -1,0 +1,138 @@
+/* 
+    Document   : CascadeStyleSheet
+    Created on : 05-Dec-2013, 14:47:22
+    Author     : x12112348
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background-color:#99CCFF;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position:center; 
+    text-align: center;
+}
+.rssFeed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	width: 400px;
+	margin-bottom: 2em;
+}
+.rssFeed a {
+	color: #444;
+	text-decoration: none;
+}
+.rssFeed a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.rssHeader { padding: 0.2em 0; }
+
+.rssBody { border: 4px solid #666; }
+.rssRow h4, .rssRow p, .rssRow div {
+	margin: 0;
+	padding: 0.5em;
+}
+
+#ticker1 .odd { background-color: #e8e8fc; }
+#ticker1 .even { background-color: #d4d4e8; }
+
+#ticker2 .odd { background-color: #e8fce8; }
+#ticker2 .even { background-color: #d4e8d4; }
+#ajaxDesc{
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size:40px
+}
+
+.Book{
+    background-color:#b0c4de;
+    width:550;
+    height:770;
+    margin-left: auto;
+    margin-right: auto;
+    backround:white;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid;
+    border-radius:25px;
+
+    text-shadow: 5px 5px 5px white;
+
+}
+firstname{
+
+    margin:0 auto;
+    height:28px;
+    width:250px;
+    border-radius:25px;
+    padding:20px;
+}
+.tb5 {
+    border:2px solid #456879;
+    border-radius:10px;
+    margin:0 auto;
+    height: 22px;
+    width: 230px;
+}
+.tree{
+    position:absolute;
+
+    background-image: url('tree.png');
+
+    height: 280px;
+    width:200px;
+
+    bottom: 0;
+    right:0;
+
+
+}
+#write{
+    background-image: url('letter3.jpg');
+    background-repeat: no-repeat;
+    height:260px;
+    width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-shadow: 5px 5px 5px white;
+    text-align: center;
+    
+padding:120px;
+    word-wrap:break-word;
+
+
+
+}
+#after{
+    
+    background-image:url('merry.png'); 
+    height: 800px;
+    width:800px;
+    background-repeat: no-repeat;
+    
+    
+    
+    
+}
+.tree1{
+
+    position:absolute;
+    background-image: url('tree.png');
+
+    height: 280px;
+    width:200px;
+    bottom: 0;
+    left:0;
+
+
+}
